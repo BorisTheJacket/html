@@ -3,23 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Boris's resume</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="code.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boris resume</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
 </head>
 
 <body>
-    <div class="position">
-        <div class="box1"><a href="index.html">Main page</a> </div>
-        <div class="box3"><a href="smile.html">Somethin that brings smile</a> </div>
-        <div class="box2"><a href="future.html">Future</a> </div>
+    <nav>
+        <div class="box1"><a href="/">Resume</a> </div>
+        <div class="position">
+            
+            <div class="box3"><a href="working.html">Working projects</a> </div>
+            <div class="box2"><a href="future.html">Future projects</a> </div>
 
-    </div>
+        </div>
+    </nav>
     <div class="container">
         <div class="info">
-            <img src="2022-11-30 14.35.00.jpg" alt="Here is the image of my face" class="avatar">
+            <img src="{{url_for('static', filename='my_photo.png')}}" alt="Here is the image of my face" class="avatar">
             <div class="info-text">
-                <h1>I'm black school educated Jedi</h1>
+                <h1>I'm Boris Sadovskiy</h1>
                 <p>Murmansk school's newbie</p>
                 <p>That's why I'm so powerfull</p>
                 <h4>My social networks addresses</h4>
